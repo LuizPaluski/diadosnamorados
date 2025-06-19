@@ -31,7 +31,6 @@ const App = () => (
           <Route path="/future-dreams" element={<FutureDreams />} />
           <Route path="/secret-treasure" element={<SecretPage />} />
           <Route path="/letters" element={<LettersPage />} />
-          <Route path="/playlist" element={<PlaylistPage />} />
           <Route path="/quiz" element={<QuizPage />} />
           <Route path="/journey" element={<Journey3DPage />} /> {/* 2. Adicione a rota */}
           <Route path="*" element={<NotFound />} />
