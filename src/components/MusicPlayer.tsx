@@ -1,57 +1,49 @@
+
 import { useState, useRef, useEffect } from 'react';
 import { Music, Music2, Volume2, VolumeX } from 'lucide-react';
 
 const MusicPlayer = () => {
-  const [isPlaying, setIsPlaying] = useState(true);
-  const [isMuted, setIsMuted] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [isMuted, setIsMuted] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
-  const musicUrl = "/caju.mp3";
 
-  
+  const musicUrl = "lovable-uploads/caju.mp3";
+
   useEffect(() => {
     if (audioRef.current) {
-      audioRef.current.volume = 0.3;
-      audioRef.current.loop = true;
-      audioRef.current.muted = true; 
-
-  
-      audioRef.current.play().catch(error => {
-        console.log("Autoplay foi bloqueado. O usuário precisa interagir para iniciar.", error);
-      
-        setIsPlaying(false);
-      });
+      audioRef.current.volume = 0.3; // Volume baixo para não incomodar
+      audioRef.current.loop = true; // Repetir a música
     }
   }, []);
 
   const togglePlay = () => {
     if (audioRef.current) {
-      const newIsPlaying = !isPlaying;
-      if (newIsPlaying) {
-        audioRef.current.play();
-      } else {
+      if (isPlaying) {
         audioRef.current.pause();
+      } else {
+        audioRef.current.play().catch(() => {
+          // Navegadores modernos bloqueiam autoplay, então só toca após interação do usuário
+          console.log('Autoplay bloqueado pelo navegador');
+        });
       }
-      setIsPlaying(newIsPlaying);
+      setIsPlaying(!isPlaying);
     }
   };
 
   const toggleMute = () => {
     if (audioRef.current) {
-      const newIsMuted = !isMuted;
-      audioRef.current.muted = newIsMuted;
-      setIsMuted(newIsMuted);
+      audioRef.current.muted = !isMuted;
+      setIsMuted(!isMuted);
     }
   };
 
   return (
     <div className="fixed bottom-6 left-6 z-50">
       <div className="bg-white/90 backdrop-blur-sm rounded-full shadow-lg border border-romantic-rose/20 p-3 flex items-center space-x-2">
-        {}
         <audio
           ref={audioRef}
           src={musicUrl}
-          autoPlay 
           onPlay={() => setIsPlaying(true)}
           onPause={() => setIsPlaying(false)}
         />
