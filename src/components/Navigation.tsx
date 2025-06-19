@@ -16,7 +16,7 @@ const Navigation = () => {
   ];
   
   // Reorganizando a ordem do menu para melhor fluxo
-  const menuOrder = ['/', '/our-story', '/gallery', '/letters', '/playlist', '/quiz', '/future-dreams'];
+  const menuOrder = ['/', '/our-story', '/gallery', '/letters', '/quiz', '/future-dreams'];
   const sortedNavLinks = navLinks.sort((a, b) => menuOrder.indexOf(a.to) - menuOrder.indexOf(b.to));
 
   const NavItem = ({ to, text }: { to: string, text: string }) => (
