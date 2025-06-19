@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -64,11 +63,13 @@ export default {
 					pearl: '#F8FAFC'
 				}
 			},
+			// --- SEÇÃO DE FONTES ATUALIZADA ---
 			fontFamily: {
-				'dancing': ['Dancing Script', 'cursive'],
-				'vibes': ['Great Vibes', 'cursive'],
-				'poppins': ['Poppins', 'sans-serif'],
+				'parisienne': ['Parisienne', 'cursive'],
+				'garamond': ['Cormorant Garamond', 'serif'],
+				'lato': ['Lato', 'sans-serif'],
 			},
+			// ------------------------------------
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
