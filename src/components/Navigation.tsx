@@ -12,11 +12,10 @@ const Navigation = () => {
     { to: '/gallery', text: 'Galeria' },
     { to: '/letters', text: 'Abra Quando...' },
     { to: '/quiz', text: 'Nosso Quiz' },
-    { to: '/journey', text: 'Nossa Jornada 3D' }, // <<< LINK ADICIONADO AQUI
     { to: '/future-dreams', text: 'Nossos Sonhos' },
   ];
 
-  const menuOrder = ['/', '/our-story', '/gallery', '/letters', '/playlist', '/quiz', '/journey', '/future-dreams'];
+  const menuOrder = ['/', '/our-story', '/gallery', '/letters', '/playlist', '/quiz', '/future-dreams'];
   const sortedNavLinks = navLinks.sort((a, b) => menuOrder.indexOf(a.to) - menuOrder.indexOf(b.to));
 
   const NavItem = ({ to, text }: { to: string, text: string }) => (
