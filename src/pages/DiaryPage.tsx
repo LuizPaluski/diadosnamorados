@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
-import { supabase } from '@/lib/supabaseClient'; 
+import { supabase } from '@/lib/supabaseClient'; // Importamos nosso cliente Supabase
 import { BookMarked, PlusCircle } from 'lucide-react';
 
 interface Note {
@@ -18,12 +18,13 @@ const DiaryPage = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  // Função para buscar as notas no banco de dados
   const fetchNotes = async () => {
     setLoading(true);
     const { data, error } = await supabase
       .from('notes')
       .select('*')
-      .order('created_at', { ascending: false }); 
+      .order('created_at', { ascending: false }); // Ordena as mais novas primeiro
 
     if (error) {
       console.error('Erro ao buscar notas:', error);
@@ -34,10 +35,12 @@ const DiaryPage = () => {
     setLoading(false);
   };
 
+  // Roda a função de busca quando a página carrega
   useEffect(() => {
     fetchNotes();
   }, []);
 
+  // Função para salvar uma nova nota
   const handleAddNote = async (e: React.FormEvent) => {
     e.preventDefault();
     if (newNote.trim() === '') return;
@@ -51,8 +54,9 @@ const DiaryPage = () => {
       console.error('Erro ao salvar nota:', error);
       setError('Ocorreu um erro ao salvar sua memória.');
     } else if (data) {
+      // Adiciona a nova nota à lista na tela, sem precisar recarregar
       setNotes([data[0], ...notes]);
-      setNewNote(''); 
+      setNewNote(''); // Limpa o campo de texto
     }
   };
 
@@ -71,6 +75,7 @@ const DiaryPage = () => {
         </div>
 
         <div className="max-w-2xl mx-auto">
+          {/* Formulário para adicionar nova nota */}
           <form onSubmit={handleAddNote} className="mb-8">
             <div className="romantic-card p-4">
               <textarea
@@ -87,6 +92,7 @@ const DiaryPage = () => {
             </div>
           </form>
 
+          {/* Seção de Notas Salvas */}
           <div className="space-y-6">
             {loading && <p className="text-center">Carregando memórias...</p>}
             {error && <p className="text-center text-red-500">{error}</p>}
