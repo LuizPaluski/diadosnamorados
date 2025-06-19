@@ -5,20 +5,16 @@ import { Menu, X, Heart } from 'lucide-react';
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // --- LISTA COMPLETA DE LINKS ---
+  // --- LISTA DE LINKS CORRIGIDA E ATUALIZADA ---
+  // Apenas as páginas que existem no seu projeto
   const navLinks = [
     { to: '/', text: 'Início' },
-    { to: '/our-story', text: 'Nossa História' },
-    { to: '/gallery', text: 'Galeria' },
+    { to: '/gallery', text: 'Nossas Memórias' },
     { to: '/love-reasons', text: 'Por Que Te Amo' },
-    { to: '/letters', text: 'Abra Quando...' },
-    { to: '/quiz', text: 'Nosso Quiz' },
+    { to: '/our-story', text: 'Nossa História' },
     { to: '/future-dreams', text: 'Nossos Sonhos' },
   ];
-  // ---------------------------------
-
-  const menuOrder = ['/', '/our-story', '/gallery', '/love-reasons', '/letters', '/quiz', '/future-dreams'];
-  const sortedNavLinks = navLinks.sort((a, b) => menuOrder.indexOf(a.to) - menuOrder.indexOf(b.to));
+  // ---------------------------------------------
 
   const NavItem = ({ to, text }: { to: string, text: string }) => (
     <NavLink
@@ -45,9 +41,9 @@ const Navigation = () => {
             <span className="font-parisienne text-2xl text-romantic-deepRose">Nosso Cantinho</span>
           </Link>
 
-          {/* Desktop Menu - agora com scroll horizontal se necessário */}
+          {/* Desktop Menu */}
           <div className="hidden lg:flex items-center space-x-6 overflow-x-auto">
-            {sortedNavLinks.map((link) => <NavItem key={link.to} {...link} />)}
+            {navLinks.map((link) => <NavItem key={link.to} {...link} />)}
           </div>
 
           {/* Mobile Menu Button */}
@@ -59,9 +55,9 @@ const Navigation = () => {
         </div>
       </nav>
 
-      {/* === MENU MÓVEL CORRIGIDO E COMPLETO === */}
+      {/* Menu Móvel */}
       <div
-        className={`fixed top-0 left-0 h-full w-full bg-white transition-transform duration-300 ease-in-out lg:hidden ${
+        className={`fixed top-0 left-0 h-full w-full bg-romantic-blush/95 backdrop-blur-md transition-transform duration-300 ease-in-out lg:hidden ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
@@ -71,7 +67,7 @@ const Navigation = () => {
           </button>
         </div>
         <div className="flex flex-col items-center justify-center h-full -mt-16 space-y-4 px-8">
-          {sortedNavLinks.map((link) => (
+          {navLinks.map((link) => (
              <NavLink
               key={link.to}
               to={link.to}
@@ -80,7 +76,7 @@ const Navigation = () => {
                 `font-lato text-2xl font-medium tracking-wider w-full text-center p-4 rounded-lg transition-all duration-200 ${
                   isActive 
                     ? 'text-white bg-romantic-rose scale-105 shadow-lg' 
-                    : 'text-gray-700 hover:bg-romantic-blush hover:text-romantic-deepRose'
+                    : 'text-gray-700 hover:bg-white/70 hover:text-romantic-deepRose'
                 }`
               }
             >
@@ -89,7 +85,6 @@ const Navigation = () => {
           ))}
         </div>
       </div>
-      {/* === FIM DA SEÇÃO CORRIGIDA === */}
     </header>
   );
 };
