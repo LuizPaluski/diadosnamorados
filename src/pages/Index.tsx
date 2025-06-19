@@ -1,8 +1,11 @@
+// src/pages/Index.tsx
+
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import SecretHeartButton from '@/components/SecretHeartButton';
+import CountdownTimer from '@/components/CountdownTimer'; // Verifique se esta linha existe
 
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -53,6 +56,12 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* --- SEÇÃO DO CONTADOR --- */}
+      <section className="py-10 px-4">
+        <CountdownTimer />
+      </section>
+      {/* ------------------------- */}
 
       <section className="py-20 px-4">
         <div className="container mx-auto">
