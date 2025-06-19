@@ -1,10 +1,9 @@
 import { useState } from 'react';
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Menu, X, Heart } from 'lucide-react';
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation();
 
   const navLinks = [
     { to: '/', text: 'Início' },
@@ -12,10 +11,12 @@ const Navigation = () => {
     { to: '/gallery', text: 'Galeria' },
     { to: '/letters', text: 'Abra Quando...' },
     { to: '/quiz', text: 'Nosso Quiz' },
+    { to: '/diary', text: 'Nosso Diário' }, // <<< LINK ADICIONADO AQUI
     { to: '/future-dreams', text: 'Nossos Sonhos' },
   ];
 
-  const menuOrder = ['/', '/our-story', '/gallery', '/letters', '/playlist', '/quiz', '/future-dreams'];
+  // Apenas para garantir a ordem correta no menu
+  const menuOrder = ['/', '/our-story', '/gallery', '/letters', '/quiz', '/diary', '/future-dreams'];
   const sortedNavLinks = navLinks.sort((a, b) => menuOrder.indexOf(a.to) - menuOrder.indexOf(b.to));
 
   const NavItem = ({ to, text }: { to: string, text: string }) => (
@@ -23,7 +24,7 @@ const Navigation = () => {
       to={to}
       onClick={() => setIsOpen(false)}
       className={({ isActive }) =>
-        `font-lato pb-1 border-b-2 transition-colors duration-300 ${
+        `font-lato pb-1 border-b-2 transition-colors duration-300 whitespace-nowrap ${
           isActive
             ? 'text-romantic-deepRose border-romantic-deepRose'
             : 'text-gray-600 border-transparent hover:text-romantic-rose'
@@ -36,18 +37,20 @@ const Navigation = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-40 bg-white/80 backdrop-blur-sm shadow-md">
-      <nav className="container mx-auto px-6 py-3">
+      <nav className="container mx-auto px-4 sm:px-6 py-3">
         <div className="flex justify-between items-center">
           <Link to="/" className="flex items-center gap-2">
             <Heart className="h-8 w-8 text-romantic-rose" />
             <span className="font-parisienne text-2xl text-romantic-deepRose">Nosso Cantinho</span>
           </Link>
 
-          <div className="hidden md:flex items-center space-x-8">
+          {/* Desktop Menu */}
+          <div className="hidden lg:flex items-center space-x-6">
             {sortedNavLinks.map((link) => <NavItem key={link.to} {...link} />)}
           </div>
 
-          <div className="md:hidden">
+          {/* Mobile Menu Button */}
+          <div className="lg:hidden">
             <button onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? <X className="h-6 w-6 text-romantic-deepRose" /> : <Menu className="h-6 w-6 text-romantic-deepRose" />}
             </button>
@@ -57,7 +60,7 @@ const Navigation = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-0 left-0 h-full w-full bg-white transition-transform duration-300 ease-in-out md:hidden ${
+        className={`fixed top-0 left-0 h-full w-full bg-white transition-transform duration-300 ease-in-out lg:hidden ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}
       >
