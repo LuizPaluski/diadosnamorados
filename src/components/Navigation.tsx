@@ -16,7 +16,7 @@ const Navigation = () => {
     { to: '/future-dreams', text: 'Nossos Sonhos' },
   ];
 
-  const menuOrder = ['/', '/our-story', '/gallery', '/letters', '/quiz', '/journey', '/future-dreams'];
+  const menuOrder = ['/', '/our-story', '/gallery', '/letters', '/playlist', '/quiz', '/journey', '/future-dreams'];
   const sortedNavLinks = navLinks.sort((a, b) => menuOrder.indexOf(a.to) - menuOrder.indexOf(b.to));
 
   const NavItem = ({ to, text }: { to: string, text: string }) => (
