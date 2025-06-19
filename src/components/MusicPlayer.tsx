@@ -7,8 +7,8 @@ const MusicPlayer = () => {
   const [isMuted, setIsMuted] = useState(false);
   const audioRef = useRef<HTMLAudioElement>(null);
 
-  // URL de uma música romântica de domínio público
-  const musicUrl = "/caju.mp3";
+
+  const musicUrl = "lovable-uploads/caju.mp3";
 
   useEffect(() => {
     if (audioRef.current) {
