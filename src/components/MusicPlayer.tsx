@@ -8,7 +8,7 @@ const MusicPlayer = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
 
 
-  const musicUrl = "lovable-uploads/caju.mp3";
+  const musicUrl = "lovable-uploads/zero.mp3";
 
   useEffect(() => {
     if (audioRef.current) {
