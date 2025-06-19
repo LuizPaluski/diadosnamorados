@@ -51,7 +51,7 @@ const Index = () => {
           </div>
 
           <h1 className="font-vibes text-6xl md:text-8xl text-romantic-deepRose mb-6 animate-fade-in">
-            Meu Anjo Lindo
+            Meu Girassol
           </h1>
           
           <p className="font-dancing text-2xl md:text-3xl text-romantic-rose mb-8 max-w-3xl mx-auto leading-relaxed">

@@ -8,9 +8,9 @@ const Footer = () => {
         <div className="mb-6">
           <Heart className="h-8 w-8 text-romantic-rose mx-auto mb-4 animate-pulse-heart" />
           <p className="font-vibes text-2xl text-romantic-deepRose mb-2">
-            "Em todo o mundo, nunca vai exister menina mais perfeita que voce."
+            "O que seria da vida se não tivéssemos coragem de tentar?"
           </p>
-          <p className="font-poppins text-sm text-gray-600">— Maya Angelou</p>
+          <p className="font-poppins text-sm text-gray-600">— Van Gogh</p>
         </div>
         
         <div className="border-t border-romantic-rose/20 pt-6">

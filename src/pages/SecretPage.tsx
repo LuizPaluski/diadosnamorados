@@ -51,11 +51,10 @@ const SecretPage = () => {
                       🗺️ Onde Encontrar Sua Surpresa:
                     </h3>
                     <p className="font-poppins text-lg text-gray-700 leading-relaxed">
-                      <strong>Procure embaixo da nossa cama, do seu lado, na caixinha de madeira que compramos juntos. 
-                      Dentro você encontrará algo que representa minha promessa de te amar para sempre. ✨</strong>
+                      <strong>Procure em algum lugar que a gente nunca repara, e se repara e so quando a gente entra no banho hihi. ✨</strong>
                     </p>
                     <p className="font-dancing text-romantic-rose mt-4 text-lg">
-                      (Ou substitua isso pela localização real do seu presente!)
+                      (sera que voce vai achar?!)
                     </p>
                   </div>
 
@@ -64,8 +63,10 @@ const SecretPage = () => {
                     <p className="font-dancing text-xl text-romantic-deepRose leading-relaxed">
                       "Este site é apenas o começo de como quero mostrar meu amor por você. 
                       Você merece ser celebrada todos os dias, e espero que esta pequena surpresa 
-                      te lembre do quão incrivelmente especial você é para mim. Eu te amo mais do que palavras 
-                      podem expressar, mais do que este site pode mostrar, e mais do que você jamais saberá. ❤️"
+                      te lembre do quão incrivelmente especial você é para mim. Eu te amo mais 
+                      do que tudo nesse mundo, quero crescer com voce, invelhecer com voce
+                      construir um mundo com voce, VOCE E TUDO TUDO TUDO E MAIS UM POUCO 
+                      NA MINHA VIDA.  Te amo minha princesa  ❤️"
                     </p>
                   </div>
 
@@ -77,14 +78,14 @@ const SecretPage = () => {
                     <ul className="font-poppins text-gray-600 text-left space-y-2">
                       <li>• Feche os olhos e faça um pedido antes de abrir</li>
                       <li>• Saiba que cada momento criando isso foi cheio de amor por você</li>
-                      <li>• Lembre-se que esta é apenas uma das muitas surpresas que tenho planejadas</li>
-                      <li>• Venha me encontrar para o maior abraço quando terminar! 🤗</li>
+                      <li>• Lembre-se que esta é apenas uma das muitas surpresas que eu vou fazer para voce ao longo da nossa vida</li>
+                      <li>• Venha me encontrar para dar o maior abraco e beijo gostoso da sua vida em mim pfv pfv pfv! 🤗</li>
                     </ul>
                   </div>
 
                   <div className="mt-8 flex justify-center items-center gap-4 text-2xl">
                     <span>💕</span>
-                    <span className="font-poppins text-romantic-deepRose">Com Todo Meu Amor</span>
+                    <span className="font-poppins text-romantic-deepRose">Do seu amor Luiz</span>
                     <span>💕</span>
                   </div>
                 </div>

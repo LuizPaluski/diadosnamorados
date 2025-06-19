@@ -22,7 +22,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <Heart className="h-6 w-6 text-romantic-rose animate-pulse-heart" />
-            <span className="font-vibes text-2xl text-romantic-deepRose">Meu Amor</span>
+            <span className="font-vibes text-2xl text-romantic-deepRose">Meu Monene</span>
           </Link>
 
           {/* Desktop Menu */}

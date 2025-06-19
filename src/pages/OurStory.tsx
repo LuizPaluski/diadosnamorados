@@ -8,27 +8,27 @@ const OurStory = () => {
     {
       title: "O Primeiro Olhar",
       date: "Capítulo 1",
-      content: "Foi um momento que mudou tudo. Quando nossos olhos se encontraram pela primeira vez, o tempo pareceu parar. Eu soube naquele instante que minha vida nunca mais seria a mesma. Havia algo mágico naquele primeiro olhar - uma faísca que cresceria na mais linda história de amor."
+      content: "Foi a primeira vez que eu tive certeza so de olhar que voce seria a princesa que eu ia querer ter todos os dias ao meu lado, desde quando seu irmao falava que eu ia ser o cunhado dele e quando te vi tive ceteza que era isso que eu queria hehehe."
     },
     {
       title: "Conhecendo Você",
       date: "Capítulo 2", 
-      content: "Cada conversa revelava outra camada da sua alma linda. Sua risada se tornou meu som favorito, seus pensamentos cativaram minha mente, e seus sonhos se tornaram sonhos que eu queria ajudar a realizar. Me vi me apaixonando mais profundamente a cada palavra que compartilhávamos."
+      content: "Cada conversa revelava outra camada da sua alma linda. Sua risada se tornou meu som favorito, seus pensamentos cativaram minha mente, e seus sonhos se tornaram sonhos que eu queria ajudar a realizar. Me vi me apaixonando cada vez mais o quanto te conhecia voce e uma menina incrivel."
     },
     {
       title: "Nosso Primeiro Encontro",
       date: "Capítulo 3",
-      content: "Nervosismo e empolgação preenchiam o ar enquanto embarcávamos em nosso primeiro encontro oficial. Cada momento foi perfeito - a maneira como você sorriu, as histórias que compartilhamos, os silêncios confortáveis. Eu soube naquela noite que queria passar cada dia te conhecendo melhor."
+      content: "Quem diria que so de te convidar sem mais nem menos voce realmente viria aqui em casa, desculpa se o macarrao nao estava tao bom, porem a outra coisa que veio tava maravilhosa hehe, brincadeiras a parte mo, foi tao perfeito nosso primeiro encontro, nao poderia ser melhor, voce dormindo comigo foi a coisa que me fez apaixonar ainda mais por voce."
     },
     {
       title: "Me Apaixonando",
       date: "Capítulo 4",
-      content: "Aconteceu gradualmente, então de uma vez só. O amor se infiltrou no meu coração e fez dele sua casa. Sua bondade, sua beleza por dentro e por fora, sua maneira de tornar tudo melhor - me vi completa e totalmente apaixonado por cada parte de você."
+      content: "Aconteceu gradualmente, então de uma vez só. O amor se infiltrou no meu coração e fez dele sua casa. Sua bondade, sua beleza por dentro e por fora, sua maneira de tornar tudo melhor - me vi completo e totalmente apaixonado por cada parte de você."
     },
     {
       title: "Nossas Aventuras",
       date: "Capítulo 5",
-      content: "Juntos exploramos novos lugares, experimentamos coisas novas e criamos memórias que durarão para sempre. Cada aventura contigo é minha aventura favorita. Seja viajando pelo mundo ou apenas aconchegados em casa, cada momento é uma aventura quando estou com você."
+      content: "Juntos exploramos novos lugares, experimentamos coisas novas(bar do zuca) e criamos memórias que durarão para sempre. Cada aventura contigo é minha aventura favorita. Seja viajando pelo mundo ou apenas aconchegados em casa me dias de preguicinha, cada momento é uma aventura quando estou com você."
     },
     {
       title: "Construindo Nossa Vida",
@@ -101,8 +101,8 @@ const OurStory = () => {
             </h2>
             <p className="font-dancing text-xl text-romantic-rose leading-relaxed">
               Nossa história ainda está sendo escrita, e cada dia adiciona novas páginas lindas. 
-              Eu te amo mais a cada capítulo, e mal posso esperar para ver o que nosso futuro reserva. 
-              Aqui está para nossa história de amor eterna. ✨
+              Eu te amo mais a cada capítulo, e mal posso esperar para ver o que nosso futuro com novas aventuras. 
+              Aqui está para nossa história de amor eterna com meu girassol. ✨
             </p>
           </div>
         </div>
