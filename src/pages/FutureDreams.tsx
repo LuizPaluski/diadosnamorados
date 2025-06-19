@@ -89,13 +89,13 @@ const FutureDreams = () => {
              Prometo te amar em cada estação da nossa vida — nos dias de sol e nas tempestades inesperadas.
             Prometo estar ao seu lado não só nos sonhos grandes, mas também nas pequenas alegrias do dia a dia.
             Apoiar teus planos como se fossem meus, sorrir com tuas vitórias e te acolher em cada incerteza.
-            Prometo segurar tua mão firme quando o mundo parecer balançar, e também quando estivermos rindo à toa sem motivo.
-            Te olhar com o mesmo encanto hoje, amanhã e nos próximos mil cafés da manhã.
-            Prometo cuidar da nossa Hana, mesmo quando ela teimar em dormir nos lugares mais aleatórios,
-            e fazer do nosso lar um lugar cheio de amor — quem sabe até com nossa pequena Eleonora correndo pelos cantos.
-            Sei que juntos podemos construir uma história linda, daquelas que dão vontade de viver mil vezes.
-            Porque contigo, Luana, o amor é mais leve, a vida é mais bonita — e o futuro, infinitamente mais nosso.
-            
+            Prometo segurar sua mão firme quando o mundo parecer balançar, e também quando estivermos dando risada a toa.
+            Te olhar com o mesmo encanto hoje, amanhã e nos próximos mil cafés da manhã que eu vou te levar na cama.
+            Prometo que quando a gente estiver morando juntos a nana vai deixar a gente mimir sem nos acordas,
+            e fazer do nosso lar um lugar cheio de amor — quem sabe até com nossa pequena Eleonora correndo pelos cantos ja pensou.
+            Sei que juntos podemos construir uma história linda, daquelas que dão vontade de viver mil vezes todos os dias.
+            Porque contigo, monene, o amor é mais leve, a vida é mais bonita — e o futuro, infinitamente mais nosso...
+
             </p>
             <div className="flex justify-center items-center gap-4 text-2xl">
               <span>💕</span>
@@ -112,7 +112,7 @@ const FutureDreams = () => {
               Nossa Visão dos Sonhos
             </h2>
             <p className="font-poppins text-gray-600">
-              Todo sonho começa com uma visão, e a nossa é pintada com amor
+              Todo sonho começa com uma visão, e a nossa tem gato e felicidade
             </p>
           </div>
           
