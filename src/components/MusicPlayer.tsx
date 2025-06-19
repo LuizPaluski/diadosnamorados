@@ -8,7 +8,7 @@ const MusicPlayer = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
 
   // URL de uma música romântica de domínio público
-  const musicUrl = "file:///C:/Users/luizg/Downloads/caju.mp3";
+  const musicUrl = "/caju.mp3";
 
   useEffect(() => {
     if (audioRef.current) {
