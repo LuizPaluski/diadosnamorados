@@ -8,7 +8,7 @@ const FutureDreams = () => {
     {
       icon: "🏡",
       title: "Nossa Casa dos Sonhos",
-      description: "Um lugar aconchegante onde podemos construir nossa vida juntos, cheio de risadas, amor e todas as nossas memórias favoritas. Talvez um jardim onde possamos assistir ao pôr do sol juntos."
+      description: "Um lugar aconchegante onde podemos construir nossa vida juntos, aquelas casas UUUUUUUuuuuu UUUUUUUU sabe mo."
     },
     {
       icon: "✈️",
@@ -18,22 +18,22 @@ const FutureDreams = () => {
     {
       icon: "👶",
       title: "Aumentando Nossa Família",
-      description: "Imaginando pequenas versões nossas correndo por aí, ensinando-as sobre amor, bondade e todas as coisas lindas da vida. Você será a mãe mais incrível."
+      description: "Imaginando uma eleonora uma luiza correndo pela casa hehehehe, e a gente se olhando e ficando emocionados."
     },
     {
       icon: "💍",
       title: "Para Sempre Juntos",
-      description: "Tornando nosso amor oficial e prometendo nos amar através de todas as aventuras da vida. Mal posso esperar para te chamar de minha esposa e passar a eternidade contigo."
+      description: "Tornando nosso amor oficial e prometendo nos amar através de todas as coisas que vamos viver. Mal posso esperar para te chamar de minha esposa linda perfeita maravilhosa."
     },
     {
       icon: "🎓",
       title: "Apoiando os Sonhos Um do Outro",
-      description: "Torcendo um pelo outro enquanto perseguimos nossos objetivos e sonhos individuais, sempre sendo o maior apoio um do outro e celebrando cada sucesso juntos."
+      description: "Torcendo um pelo outro enquanto perseguimos nossos objetivos e sonhos individuais, sempre sempre eu vou torcer por voce e ser seu maior apoio monene."
     },
     {
       icon: "🌅",
       title: "Envelhecendo Juntos",
-      description: "Sentados na nossa varanda quando estivermos velhos e grisalhos, ainda de mãos dadas, ainda rindo juntos, e ainda tão apaixonados quanto estamos hoje - talvez até mais."
+      description: "Sentados na nossa varanda quando estivermos velhinhos e cabelo branquin, ainda de mãos dadas, ainda rindo juntos, e ainda tão apaixonados quanto estamos hoje - talvez até mais(muito mais)."
     }
   ];
 
@@ -86,9 +86,16 @@ const FutureDreams = () => {
               Minha Promessa para Você
             </h2>
             <p className="font-dancing text-xl text-romantic-rose leading-relaxed mb-6">
-              Prometo te amar através de cada estação da vida, apoiar seus sonhos como se fossem meus, 
-              segurar sua mão através de cada desafio, e celebrar cada alegria contigo. 
-              Juntos, podemos tornar todos os nossos sonhos realidade.
+             Prometo te amar em cada estação da nossa vida — nos dias de sol e nas tempestades inesperadas.
+            Prometo estar ao seu lado não só nos sonhos grandes, mas também nas pequenas alegrias do dia a dia.
+            Apoiar teus planos como se fossem meus, sorrir com tuas vitórias e te acolher em cada incerteza.
+            Prometo segurar tua mão firme quando o mundo parecer balançar, e também quando estivermos rindo à toa sem motivo.
+            Te olhar com o mesmo encanto hoje, amanhã e nos próximos mil cafés da manhã.
+            Prometo cuidar da nossa Hana, mesmo quando ela teimar em dormir nos lugares mais aleatórios,
+            e fazer do nosso lar um lugar cheio de amor — quem sabe até com nossa pequena Eleonora correndo pelos cantos.
+            Sei que juntos podemos construir uma história linda, daquelas que dão vontade de viver mil vezes.
+            Porque contigo, Luana, o amor é mais leve, a vida é mais bonita — e o futuro, infinitamente mais nosso.
+            
             </p>
             <div className="flex justify-center items-center gap-4 text-2xl">
               <span>💕</span>

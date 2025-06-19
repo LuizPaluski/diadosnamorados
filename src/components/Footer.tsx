@@ -8,17 +8,17 @@ const Footer = () => {
         <div className="mb-6">
           <Heart className="h-8 w-8 text-romantic-rose mx-auto mb-4 animate-pulse-heart" />
           <p className="font-vibes text-2xl text-romantic-deepRose mb-2">
-            "Em todo o mundo, não há coração para mim como o seu."
+            "Em todo o mundo, nunca vai exister menina mais perfeita que voce."
           </p>
           <p className="font-poppins text-sm text-gray-600">— Maya Angelou</p>
         </div>
         
         <div className="border-t border-romantic-rose/20 pt-6">
           <p className="font-dancing text-lg text-romantic-deepRose mb-2">
-            Juntos desde [Sua Data] ✨
+            Juntos a quase 2 anos ✨
           </p>
           <p className="font-poppins text-sm text-gray-600">
-            Para sempre e sempre, meu amor 💕
+            Para sempre e sempre, meu monene 💕
           </p>
         </div>
       </div>
