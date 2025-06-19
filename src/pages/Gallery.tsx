@@ -11,15 +11,15 @@ const Gallery = () => {
   const photos = [
     {
       src: "/lovable-uploads/87d0e609-068a-432d-a457-ebb98a7806b2.png",
-      caption: "Momentos bobos e divertidos que fazem meu coração acelerar"
+      caption: "Nossa primeira foto juntos"
     },
     {
       src: "/lovable-uploads/39cef09c-11af-40c4-bd65-968b13bbfa9a.png",
-      caption: "Festa junina especial - celebrando nosso amor com alegria"
+      caption: "Seu primeiro aniversario ao meu lado monene"
     },
     {
       src: "/lovable-uploads/c3cdc0c1-f49b-4845-bea1-8f5e4609801b.png",
-      caption: "Sorrisos que iluminam qualquer dia - assim é nosso amor"
+      caption: "NOSSA PRIMEIRA FESTINHA JUNINA MONENE"
     },
     {
       src: "/lovable-uploads/ce1c29a4-4628-47f6-83c0-d0b5cafd4210.png",
@@ -27,23 +27,23 @@ const Gallery = () => {
     },
     {
       src: "/lovable-uploads/7320e5bc-cacb-4ca6-80d8-9308bc1647b6.png",
-      caption: "Cuidando um do outro - até nas máscaras faciais somos fofos"
+      caption: "Sendo romatincos ate quando estamos de mascara"
     },
     {
       src: "/lovable-uploads/16e637fd-c23e-49c0-ac2a-ef4ea6899519.png",
-      caption: "Aventuras juntos - cada viagem é melhor ao seu lado"
+      caption: "Nossa primeira viagem entre amigos"
     },
     {
       src: "/lovable-uploads/cc46d6e8-e8b0-4606-b64c-7bd14230de7d.png",
-      caption: "Noites mágicas explorando o mundo juntos"
+      caption: "Lugares bonitos com a minha princesa(eu amei esse dia)"
     },
     {
       src: "/lovable-uploads/a9c67f05-fd3d-4774-b45a-fb159039b37f.png",
-      caption: "Seu sorriso é a coisa mais linda que existe no mundo"
+      caption: "Seu sorriso é a coisa mais linda que existe no mundo(voce sabe que eu sou apaixonado nessa foto)"
     },
     {
       src: "/lovable-uploads/6da6edd4-5292-4575-8e40-05612ff5d8cb.png",
-      caption: "Momentos íntimos que guardarei para sempre no coração"
+      caption: "Momentos mais legais da minha vida foi com voce e esta sendo com voce"
     }
   ];
 
@@ -58,7 +58,7 @@ const Gallery = () => {
             Nossas Lindas Memórias
           </h1>
           <p className="font-dancing text-xl md:text-2xl text-romantic-rose max-w-2xl mx-auto">
-            Cada foto captura um momento da nossa história de amor, um tesouro para guardar para sempre
+            Cada foto captura um momento do nosso amor e da nossa historia.
           </p>
         </div>
 

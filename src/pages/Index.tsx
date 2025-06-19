@@ -55,8 +55,12 @@ const Index = () => {
           </h1>
           
           <p className="font-dancing text-2xl md:text-3xl text-romantic-rose mb-8 max-w-3xl mx-auto leading-relaxed">
-            Você é o sol que ilumina meus dias mais escuros, a música que faz meu coração cantar, 
-            e o amor que completa minha alma. Cada momento contigo é um presente precioso.
+            Monene, teu sorriso é como um girassol virado para mim.
+            Em voce mora a luz que aquece meus dias e me deixa mais feliz.
+            Te amo em cada detalhe, sem voce eu nao sou nada.
+            Quero voce ao meu lado ate ficarmos velhinhos.
+            Te amo meu amor, obrigado por ser tudo na minha vida.
+            Te amo
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

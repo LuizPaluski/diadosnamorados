@@ -5,44 +5,52 @@ import SecretHeartButton from '@/components/SecretHeartButton';
 import { Heart } from 'lucide-react';
 
 const LoveReasons = () => {
-  const reasons = [
-    {
-      title: "Seu Sorriso Incrível",
-      description: "Seu sorriso ilumina todo o meu mundo e deixa cada dia mais brilhante. É a primeira coisa que penso quando acordo e a última que vejo antes de dormir."
-    },
-    {
-      title: "Seu Coração Bondoso",
-      description: "A maneira como você cuida dos outros e mostra compaixão por todos ao seu redor me faz me apaixonar mais por você a cada dia."
-    },
-    {
-      title: "Sua Risada Contagiante",
-      description: "Sua risada é música para meus ouvidos. Ela enche nossa casa de alegria e me lembra que a vida deve ser celebrada ao seu lado."
-    },
-    {
-      title: "Sua Inteligência",
-      description: "Sua mente brilhante me impressiona constantemente. A forma como você pensa, resolve problemas e vê o mundo me inspira a ser melhor."
-    },
-    {
-      title: "Seus Sonhos",
-      description: "Amo como você é apaixonada por seus objetivos e sonhos. Te apoiar e ver você brilhar me traz uma felicidade incrível."
-    },
-    {
-      title: "Seu Toque Carinhoso",
-      description: "A forma como você segura minha mão, dá os melhores abraços e me faz sentir seguro e amado apenas com seu toque é mágica."
-    },
-    {
-      title: "Sua Força",
-      description: "Você enfrenta desafios com tanta graça e determinação. Sua força me inspira e me deixa orgulhoso de estar ao seu lado."
-    },
-    {
-      title: "Seu Amor pela Vida",
-      description: "Você encontra alegria nos menores momentos e me ensina a valorizar cada bênção que temos juntos."
-    },
-    {
-      title: "Como Você Me Ama",
-      description: "Você me ama completamente, com defeitos e tudo. Você me faz sentir merecedor, querido e como a pessoa mais sortuda do mundo."
-    }
-  ];
+const reasons = [
+  {
+    title: "Teu Sorriso",
+    description: "Teu sorriso, Monene, é como sol em manhã fria. Ele ilumina tudo dentro de mim e é a lembrança mais linda que carrego ao acordar e ao dormir."
+  },
+  {
+    title: "Teu Coração",
+    description: "Luana, teu coração é um lar cheio de carinho. A forma como cuida dos outros me mostra todos os dias o privilégio que é te amar."
+  },
+  {
+    title: "Tua Risada",
+    description: "Tua risada é como um campo de girassóis dançando ao vento — leve, feliz, contagiante. Me faz sorrir mesmo nos dias nublados."
+  },
+  {
+    title: "Tua Inteligência Brilhante",
+    description: "Luana, tua mente brilha com uma luz única. O jeito que você enxerga o mundo, com tanta sabedoria e sensibilidade, me encanta profundamente."
+  },
+  {
+    title: "Seus sonhos",
+    description: "Teus sonhos, Monene, são como estrelas no meu céu. Ver você lutando por eles me dá um orgulho imenso e me faz querer ser teu apoio sempre."
+  },
+  {
+    title: "Teu Toque, Meu Porto Seguro",
+    description: "Quando Girassol me toca, o mundo fica em silêncio. Teus abraços, teus carinhos... cada gesto teu é um abrigo onde eu sempre quero estar."
+  },
+  {
+    title: "Tua Força, Luana",
+    description: "Luana, você enfrenta tudo com uma coragem linda. Mesmo quando o mundo pesa, você segue firme — e isso me inspira demais."
+  },
+  {
+    title: "Amor Pela Vida",
+    description: "Monene, você transforma momentos simples em lembranças eternas. Tua alegria me ensina a ver beleza até nos detalhes mais pequenos."
+  },
+  {
+    title: "O Jeito Como Você Me Ama",
+    description: "Girassol, você me ama com uma verdade rara, abraçando cada parte de quem eu sou. Ao teu lado, me sinto inteiro — e profundamente amado."
+  },
+  {
+    title: "você me entende até no silêncio",
+    description: "Mesmo sem palavras, você sabe o que eu sinto. E isso é raro."
+  },
+  {
+    title: "Porque te amar é a coisa mais natural e verdadeira que já senti.",
+    description: "É como respirar. Simples assim: eu te amo.",
+  }
+];
 
   return (
     <div className="min-h-screen">
@@ -91,8 +99,8 @@ const LoveReasons = () => {
             </h2>
             <p className="font-dancing text-xl text-romantic-rose leading-relaxed">
               Todos os dias contigo, eu descubro novas razões para te amar. Você é meu coração, minha alma, 
-              meu tudo. Obrigado por ser a mulher incrível que você é e por escolher compartilhar sua vida linda comigo. 
-              Eu te amo mais do que palavras poderiam expressar. ❤️
+              meu girassol. Obrigado por ser a mulher incrível do mundo e por escolher compartilhar sua vida comigo. 
+              Eu te amo mais do que cafe serio mo muito mais. ❤️
             </p>
           </div>
         </div>
