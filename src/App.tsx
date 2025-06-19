@@ -11,7 +11,9 @@ import FutureDreams from "./pages/FutureDreams";
 import SecretPage from "./pages/SecretPage";
 import NotFound from "./pages/NotFound";
 import MusicPlayer from "./components/MusicPlayer";
-import LettersPage from "./pages/Letters"; // 1. Importe a nova página
+import LettersPage from "./pages/Letters";
+import PlaylistPage from "./pages/Playlist";
+import QuizPage from "./pages/QuizPage"; // 1. Importe a nova página
 
 const queryClient = new QueryClient();
 
@@ -28,7 +30,9 @@ const App = () => (
           <Route path="/our-story" element={<OurStory />} />
           <Route path="/future-dreams" element={<FutureDreams />} />
           <Route path="/secret-treasure" element={<SecretPage />} />
-          <Route path="/letters" element={<LettersPage />} /> {/* 2. Adicione a rota */}
+          <Route path="/letters" element={<LettersPage />} />
+          <Route path="/playlist" element={<PlaylistPage />} />
+          <Route path="/quiz" element={<QuizPage />} /> {/* 2. Adicione a rota */}
           <Route path="*" element={<NotFound />} />
         </Routes>
         <MusicPlayer />

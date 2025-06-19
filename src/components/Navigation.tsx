@@ -1,19 +1,39 @@
-// src/components/Navigation.tsx
-
 import { useState } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 import { Menu, X, Heart } from 'lucide-react';
-
-const navLinks = [
-  { to: '/our-story', text: 'Nossa História' },
-  { to: '/gallery', text: 'Galeria' },
-  { to: '/love-reasons', text: 'Por Que Te Amo' },
-  { to: '/letters', text: 'Abra Quando...' }, 
-  { to: '/future-dreams', text: 'Nossos Sonhos' },
-];
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
+
+  const navLinks = [
+    { to: '/', text: 'Início' },
+    { to: '/our-story', text: 'Nossa História' },
+    { to: '/gallery', text: 'Galeria' },
+    { to: '/letters', text: 'Abra Quando...' },
+    { to: '/quiz', text: 'Nosso Quiz' }, // <<< LINK ADICIONADO AQUI
+    { to: '/future-dreams', text: 'Nossos Sonhos' },
+  ];
+  
+  // Reorganizando a ordem do menu para melhor fluxo
+  const menuOrder = ['/', '/our-story', '/gallery', '/letters', '/playlist', '/quiz', '/future-dreams'];
+  const sortedNavLinks = navLinks.sort((a, b) => menuOrder.indexOf(a.to) - menuOrder.indexOf(b.to));
+
+  const NavItem = ({ to, text }: { to: string, text: string }) => (
+    <NavLink
+      to={to}
+      onClick={() => setIsOpen(false)}
+      className={({ isActive }) =>
+        `font-lato pb-1 border-b-2 transition-colors duration-300 ${
+          isActive
+            ? 'text-romantic-deepRose border-romantic-deepRose'
+            : 'text-gray-600 border-transparent hover:text-romantic-rose'
+        }`
+      }
+    >
+      {text}
+    </NavLink>
+  );
 
   return (
     <header className="fixed top-0 left-0 right-0 z-40 bg-white/80 backdrop-blur-sm shadow-md">
@@ -26,27 +46,13 @@ const Navigation = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            {navLinks.map((link) => (
-              <NavLink
-                key={link.to}
-                to={link.to}
-                className={({ isActive }) =>
-                  `font-lato font-medium pb-1 border-b-2 transition-colors duration-300 ${
-                    isActive
-                      ? 'text-romantic-deepRose border-romantic-deepRose'
-                      : 'text-gray-600 border-transparent hover:text-romantic-rose'
-                  }`
-                }
-              >
-                {link.text}
-              </NavLink>
-            ))}
+            {sortedNavLinks.map((link) => <NavItem key={link.to} {...link} />)}
           </div>
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button onClick={() => setIsOpen(!isOpen)}>
-              <Menu className="h-6 w-6 text-romantic-deepRose" />
+              {isOpen ? <X className="h-6 w-6 text-romantic-deepRose" /> : <Menu className="h-6 w-6 text-romantic-deepRose" />}
             </button>
           </div>
         </div>
@@ -64,8 +70,8 @@ const Navigation = () => {
           </button>
         </div>
         <div className="flex flex-col items-center justify-center h-full -mt-16 space-y-8">
-          {navLinks.map((link) => (
-            <NavLink
+          {sortedNavLinks.map((link) => (
+             <NavLink
               key={link.to}
               to={link.to}
               onClick={() => setIsOpen(false)}
