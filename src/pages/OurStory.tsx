@@ -6,39 +6,39 @@ import SecretHeartButton from '@/components/SecretHeartButton';
 const OurStory = () => {
   const storyChapters = [
     {
-      title: "The First Glance",
-      date: "Chapter 1",
-      content: "It was a moment that changed everything. When our eyes first met, time seemed to stop. I knew in that instant that my life would never be the same. There was something magical about that first glance - a spark that would grow into the most beautiful love story."
+      title: "O Primeiro Olhar",
+      date: "Capítulo 1",
+      content: "Foi um momento que mudou tudo. Quando nossos olhos se encontraram pela primeira vez, o tempo pareceu parar. Eu soube naquele instante que minha vida nunca mais seria a mesma. Havia algo mágico naquele primeiro olhar - uma faísca que cresceria na mais linda história de amor."
     },
     {
-      title: "Getting to Know You",
-      date: "Chapter 2", 
-      content: "Every conversation revealed another layer of your beautiful soul. Your laugh became my favorite sound, your thoughts captivated my mind, and your dreams became dreams I wanted to help make come true. I found myself falling deeper with every word we shared."
+      title: "Conhecendo Você",
+      date: "Capítulo 2", 
+      content: "Cada conversa revelava outra camada da sua alma linda. Sua risada se tornou meu som favorito, seus pensamentos cativaram minha mente, e seus sonhos se tornaram sonhos que eu queria ajudar a realizar. Me vi me apaixonando mais profundamente a cada palavra que compartilhávamos."
     },
     {
-      title: "Our First Date",
-      date: "Chapter 3",
-      content: "Nervous excitement filled the air as we embarked on our first official date. Every moment was perfect - the way you smiled, the stories we shared, the comfortable silences. I knew that night that I wanted to spend every day getting to know you better."
+      title: "Nosso Primeiro Encontro",
+      date: "Capítulo 3",
+      content: "Nervosismo e empolgação preenchiam o ar enquanto embarcávamos em nosso primeiro encontro oficial. Cada momento foi perfeito - a maneira como você sorriu, as histórias que compartilhamos, os silêncios confortáveis. Eu soube naquela noite que queria passar cada dia te conhecendo melhor."
     },
     {
-      title: "Falling in Love",
-      date: "Chapter 4",
-      content: "It happened gradually, then all at once. Love crept into my heart and made itself at home. Your kindness, your beauty inside and out, your way of making everything better - I found myself completely and utterly in love with every part of you."
+      title: "Me Apaixonando",
+      date: "Capítulo 4",
+      content: "Aconteceu gradualmente, então de uma vez só. O amor se infiltrou no meu coração e fez dele sua casa. Sua bondade, sua beleza por dentro e por fora, sua maneira de tornar tudo melhor - me vi completa e totalmente apaixonado por cada parte de você."
     },
     {
-      title: "Our Adventures",
-      date: "Chapter 5",
-      content: "Together we've explored new places, tried new things, and created memories that will last a lifetime. Every adventure with you is my favorite adventure. Whether we're traveling the world or just cuddled up at home, every moment is an adventure when I'm with you."
+      title: "Nossas Aventuras",
+      date: "Capítulo 5",
+      content: "Juntos exploramos novos lugares, experimentamos coisas novas e criamos memórias que durarão para sempre. Cada aventura contigo é minha aventura favorita. Seja viajando pelo mundo ou apenas aconchegados em casa, cada momento é uma aventura quando estou com você."
     },
     {
-      title: "Building Our Life",
-      date: "Chapter 6",
-      content: "Day by day, we've built something beautiful together. Our inside jokes, our traditions, our dreams for the future - we've created a love that feels like home. You've become not just my partner, but my best friend and my greatest love."
+      title: "Construindo Nossa Vida",
+      date: "Capítulo 6",
+      content: "Dia após dia, construímos algo lindo juntos. Nossas piadas internas, nossas tradições, nossos sonhos para o futuro - criamos um amor que parece um lar. Você se tornou não apenas minha parceira, mas minha melhor amiga e meu maior amor."
     },
     {
-      title: "Forever and Always",
-      date: "Chapter ∞",
-      content: "This is just the beginning of our story. Every day I wake up grateful to call you mine and excited to write new chapters together. Our love story is my favorite story, and I can't wait to see what beautiful adventures await us in the chapters yet to come."
+      title: "Para Sempre e Sempre",
+      date: "Capítulo ∞",
+      content: "Este é apenas o começo da nossa história. Todos os dias acordo grato por te chamar de minha e empolgado para escrever novos capítulos juntos. Nossa história de amor é minha história favorita, e mal posso esperar para ver que aventuras lindas nos aguardam nos capítulos que ainda estão por vir."
     }
   ];
 
@@ -50,10 +50,10 @@ const OurStory = () => {
         {/* Header */}
         <div className="text-center mb-16 px-4">
           <h1 className="font-vibes text-5xl md:text-7xl text-romantic-deepRose mb-6">
-            Our Love Story
+            Nossa História de Amor
           </h1>
           <p className="font-dancing text-xl md:text-2xl text-romantic-rose max-w-3xl mx-auto">
-            A beautiful journey of two hearts finding their way to each other and creating something magical together
+            Uma linda jornada de dois corações encontrando o caminho um para o outro e criando algo mágico juntos
           </p>
         </div>
 
@@ -97,12 +97,12 @@ const OurStory = () => {
         <div className="container mx-auto px-4 mt-16">
           <div className="romantic-card text-center max-w-4xl mx-auto">
             <h2 className="font-vibes text-4xl text-romantic-deepRose mb-6">
-              To Be Continued...
+              Continua...
             </h2>
             <p className="font-dancing text-xl text-romantic-rose leading-relaxed">
-              Our story is still being written, and every day adds new beautiful pages. 
-              I love you more with each chapter, and I can't wait to see what our future holds. 
-              Here's to our forever love story. ✨
+              Nossa história ainda está sendo escrita, e cada dia adiciona novas páginas lindas. 
+              Eu te amo mais a cada capítulo, e mal posso esperar para ver o que nosso futuro reserva. 
+              Aqui está para nossa história de amor eterna. ✨
             </p>
           </div>
         </div>

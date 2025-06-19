@@ -7,33 +7,33 @@ const FutureDreams = () => {
   const dreams = [
     {
       icon: "🏡",
-      title: "Our Dream Home",
-      description: "A cozy place where we can build our life together, filled with laughter, love, and all our favorite memories. Maybe a garden where we can watch sunsets together."
+      title: "Nossa Casa dos Sonhos",
+      description: "Um lugar aconchegante onde podemos construir nossa vida juntos, cheio de risadas, amor e todas as nossas memórias favoritas. Talvez um jardim onde possamos assistir ao pôr do sol juntos."
     },
     {
       icon: "✈️",
-      title: "Adventures Around the World",
-      description: "Exploring new countries, experiencing different cultures, and creating unforgettable memories together. Every destination is better when you're by my side."
+      title: "Aventuras Pelo Mundo",
+      description: "Explorando novos países, vivenciando culturas diferentes e criando memórias inesquecíveis juntos. Todo destino é melhor quando você está ao meu lado."
     },
     {
       icon: "👶",
-      title: "Growing Our Family",
-      description: "Imagining little versions of us running around, teaching them about love, kindness, and all the beautiful things in life. You'll be the most amazing mother."
+      title: "Aumentando Nossa Família",
+      description: "Imaginando pequenas versões nossas correndo por aí, ensinando-as sobre amor, bondade e todas as coisas lindas da vida. Você será a mãe mais incrível."
     },
     {
       icon: "💍",
-      title: "Forever Together",
-      description: "Making our love official and promising to love each other through all of life's adventures. I can't wait to call you my wife and spend eternity with you."
+      title: "Para Sempre Juntos",
+      description: "Tornando nosso amor oficial e prometendo nos amar através de todas as aventuras da vida. Mal posso esperar para te chamar de minha esposa e passar a eternidade contigo."
     },
     {
       icon: "🎓",
-      title: "Supporting Each Other's Dreams",
-      description: "Cheering each other on as we pursue our individual goals and dreams, always being each other's biggest supporter and celebrating every success together."
+      title: "Apoiando os Sonhos Um do Outro",
+      description: "Torcendo um pelo outro enquanto perseguimos nossos objetivos e sonhos individuais, sempre sendo o maior apoio um do outro e celebrando cada sucesso juntos."
     },
     {
       icon: "🌅",
-      title: "Growing Old Together",
-      description: "Sitting on our porch when we're old and gray, still holding hands, still laughing together, and still as much in love as we are today - maybe even more."
+      title: "Envelhecendo Juntos",
+      description: "Sentados na nossa varanda quando estivermos velhos e grisalhos, ainda de mãos dadas, ainda rindo juntos, e ainda tão apaixonados quanto estamos hoje - talvez até mais."
     }
   ];
 
@@ -45,11 +45,11 @@ const FutureDreams = () => {
         {/* Header */}
         <div className="text-center mb-16 px-4">
           <h1 className="font-vibes text-5xl md:text-7xl text-romantic-deepRose mb-6">
-            Our Future Dreams
+            Nossos Sonhos Futuros
           </h1>
           <p className="font-dancing text-xl md:text-2xl text-romantic-rose max-w-3xl mx-auto mb-8">
-            Together we dream of a beautiful future filled with love, adventure, and endless possibilities. 
-            Here are the dreams my heart holds for us.
+            Juntos sonhamos com um futuro lindo cheio de amor, aventura e possibilidades infinitas. 
+            Aqui estão os sonhos que meu coração guarda para nós.
           </p>
           <div className="text-4xl animate-float">✨</div>
         </div>
@@ -83,16 +83,16 @@ const FutureDreams = () => {
         <div className="container mx-auto px-4 mt-16">
           <div className="romantic-card text-center max-w-4xl mx-auto">
             <h2 className="font-vibes text-4xl text-romantic-deepRose mb-6">
-              My Promise to You
+              Minha Promessa para Você
             </h2>
             <p className="font-dancing text-xl text-romantic-rose leading-relaxed mb-6">
-              I promise to love you through every season of life, to support your dreams as if they were my own, 
-              to hold your hand through every challenge, and to celebrate every joy with you. 
-              Together, we can make all our dreams come true.
+              Prometo te amar através de cada estação da vida, apoiar seus sonhos como se fossem meus, 
+              segurar sua mão através de cada desafio, e celebrar cada alegria contigo. 
+              Juntos, podemos tornar todos os nossos sonhos realidade.
             </p>
             <div className="flex justify-center items-center gap-4 text-2xl">
               <span>💕</span>
-              <span className="font-poppins text-romantic-deepRose">Forever Yours</span>
+              <span className="font-poppins text-romantic-deepRose">Para Sempre Seu</span>
               <span>💕</span>
             </div>
           </div>
@@ -102,10 +102,10 @@ const FutureDreams = () => {
         <div className="container mx-auto px-4 mt-16">
           <div className="text-center mb-8">
             <h2 className="font-dancing text-3xl text-romantic-deepRose mb-4">
-              Our Dream Vision
+              Nossa Visão dos Sonhos
             </h2>
             <p className="font-poppins text-gray-600">
-              Every dream starts with a vision, and ours is painted with love
+              Todo sonho começa com uma visão, e a nossa é pintada com amor
             </p>
           </div>
           

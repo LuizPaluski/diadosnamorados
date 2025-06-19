@@ -45,26 +45,26 @@ const Index = () => {
           <div className="w-64 h-64 mx-auto mb-8 rounded-full overflow-hidden shadow-2xl border-4 border-white/50">
             <img
               src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=400&fit=crop&crop=face"
-              alt="My Beautiful Girlfriend"
+              alt="Minha Linda Namorada"
               className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
             />
           </div>
 
           <h1 className="font-vibes text-6xl md:text-8xl text-romantic-deepRose mb-6 animate-fade-in">
-            My Beautiful Angel
+            Meu Anjo Lindo
           </h1>
           
           <p className="font-dancing text-2xl md:text-3xl text-romantic-rose mb-8 max-w-3xl mx-auto leading-relaxed">
-            You are the sunshine that brightens my darkest days, the melody that makes my heart sing, 
-            and the love that completes my soul. Every moment with you is a precious gift.
+            Você é o sol que ilumina meus dias mais escuros, a música que faz meu coração cantar, 
+            e o amor que completa minha alma. Cada momento contigo é um presente precioso.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link to="/gallery" className="love-button">
-              See Our Memories
+              Nossas Memórias
             </Link>
             <Link to="/love-reasons" className="love-button bg-gradient-to-r from-romantic-gold to-yellow-500">
-              Why I Love You
+              Por Que Te Amo
             </Link>
           </div>
         </div>
@@ -76,34 +76,34 @@ const Index = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {/* Our Story Preview */}
             <div className="romantic-card text-center hover:scale-105 transition-transform duration-300">
-              <h3 className="font-dancing text-3xl text-romantic-deepRose mb-4">Our Love Story</h3>
+              <h3 className="font-dancing text-3xl text-romantic-deepRose mb-4">Nossa História</h3>
               <p className="font-poppins text-gray-600 mb-6">
-                From the first moment our eyes met, I knew you were the one who would change my life forever...
+                Desde o primeiro momento que nossos olhos se encontraram, eu soube que você mudaria minha vida para sempre...
               </p>
               <Link to="/our-story" className="inline-block love-button">
-                Read Our Story
+                Ler Nossa História
               </Link>
             </div>
 
             {/* Gallery Preview */}
             <div className="romantic-card text-center hover:scale-105 transition-transform duration-300">
-              <h3 className="font-dancing text-3xl text-romantic-deepRose mb-4">Our Memories</h3>
+              <h3 className="font-dancing text-3xl text-romantic-deepRose mb-4">Nossas Lembranças</h3>
               <p className="font-poppins text-gray-600 mb-6">
-                Every photo tells a story of our love, capturing the beautiful moments we've shared together...
+                Cada foto conta uma história do nosso amor, capturando os momentos lindos que vivemos juntos...
               </p>
               <Link to="/gallery" className="inline-block love-button">
-                View Gallery
+                Ver Galeria
               </Link>
             </div>
 
             {/* Dreams Preview */}
             <div className="romantic-card text-center hover:scale-105 transition-transform duration-300">
-              <h3 className="font-dancing text-3xl text-romantic-deepRose mb-4">Our Future</h3>
+              <h3 className="font-dancing text-3xl text-romantic-deepRose mb-4">Nosso Futuro</h3>
               <p className="font-poppins text-gray-600 mb-6">
-                Together we'll build a future filled with love, laughter, and endless adventures...
+                Juntos vamos construir um futuro cheio de amor, risadas e aventuras sem fim...
               </p>
               <Link to="/future-dreams" className="inline-block love-button">
-                Our Dreams
+                Nossos Sonhos
               </Link>
             </div>
           </div>

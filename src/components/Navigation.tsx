@@ -8,11 +8,11 @@ const Navigation = () => {
   const location = useLocation();
 
   const menuItems = [
-    { path: '/', label: 'Home' },
-    { path: '/gallery', label: 'Our Memories' },
-    { path: '/love-reasons', label: 'Why I Love You' },
-    { path: '/our-story', label: 'Our Story' },
-    { path: '/future-dreams', label: 'Our Dreams' },
+    { path: '/', label: 'Início' },
+    { path: '/gallery', label: 'Nossas Memórias' },
+    { path: '/love-reasons', label: 'Por Que Te Amo' },
+    { path: '/our-story', label: 'Nossa História' },
+    { path: '/future-dreams', label: 'Nossos Sonhos' },
   ];
 
   return (
@@ -22,7 +22,7 @@ const Navigation = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <Heart className="h-6 w-6 text-romantic-rose animate-pulse-heart" />
-            <span className="font-vibes text-2xl text-romantic-deepRose">My Love</span>
+            <span className="font-vibes text-2xl text-romantic-deepRose">Meu Amor</span>
           </Link>
 
           {/* Desktop Menu */}

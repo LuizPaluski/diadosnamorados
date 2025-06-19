@@ -11,27 +11,27 @@ const Gallery = () => {
   const photos = [
     {
       src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop",
-      caption: "Our first date - the beginning of forever"
+      caption: "Nosso primeiro encontro - o começo do para sempre"
     },
     {
       src: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=600&h=400&fit=crop",
-      caption: "Dancing under the stars"
+      caption: "Dançando sob as estrelas"
     },
     {
       src: "https://images.unsplash.com/photo-1472396961693-142e6e269027?w=600&h=400&fit=crop",
-      caption: "Adventure together in the mountains"
+      caption: "Aventura juntos nas montanhas"
     },
     {
       src: "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?w=600&h=400&fit=crop",
-      caption: "Watching the sunset hand in hand"
+      caption: "Assistindo o pôr do sol de mãos dadas"
     },
     {
       src: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=600&h=400&fit=crop",
-      caption: "Cozy moments at home"
+      caption: "Momentos aconchegantes em casa"
     },
     {
       src: "https://images.unsplash.com/photo-1582562124811-c09040d0a901?w=600&h=400&fit=crop",
-      caption: "Even our pets love our love story"
+      caption: "Até nossos pets amam nossa história de amor"
     },
   ];
 
@@ -43,10 +43,10 @@ const Gallery = () => {
         {/* Header */}
         <div className="text-center mb-12 px-4">
           <h1 className="font-vibes text-5xl md:text-7xl text-romantic-deepRose mb-4">
-            Our Beautiful Memories
+            Nossas Lindas Memórias
           </h1>
           <p className="font-dancing text-xl md:text-2xl text-romantic-rose max-w-2xl mx-auto">
-            Every photo captures a moment of our love story, a treasure to cherish forever
+            Cada foto captura um momento da nossa história de amor, um tesouro para guardar para sempre
           </p>
         </div>
 

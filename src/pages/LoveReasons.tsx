@@ -7,40 +7,40 @@ import { Heart } from 'lucide-react';
 const LoveReasons = () => {
   const reasons = [
     {
-      title: "Your Beautiful Smile",
-      description: "Your smile lights up my entire world and makes every day brighter. It's the first thing I think about when I wake up and the last thing I see before I sleep."
+      title: "Seu Sorriso Incrível",
+      description: "Seu sorriso ilumina todo o meu mundo e deixa cada dia mais brilhante. É a primeira coisa que penso quando acordo e a última que vejo antes de dormir."
     },
     {
-      title: "Your Kind Heart",
-      description: "The way you care for others and show compassion to everyone around you makes me fall in love with you more each day."
+      title: "Seu Coração Bondoso",
+      description: "A maneira como você cuida dos outros e mostra compaixão por todos ao seu redor me faz me apaixonar mais por você a cada dia."
     },
     {
-      title: "Your Infectious Laugh",
-      description: "Your laughter is music to my ears. It fills our home with joy and reminds me that life is meant to be celebrated with you."
+      title: "Sua Risada Contagiante",
+      description: "Sua risada é música para meus ouvidos. Ela enche nossa casa de alegria e me lembra que a vida deve ser celebrada ao seu lado."
     },
     {
-      title: "Your Intelligence",
-      description: "Your brilliant mind amazes me constantly. The way you think, solve problems, and see the world inspires me to be better."
+      title: "Sua Inteligência",
+      description: "Sua mente brilhante me impressiona constantemente. A forma como você pensa, resolve problemas e vê o mundo me inspira a ser melhor."
     },
     {
-      title: "Your Dreams",
-      description: "I love how passionate you are about your goals and dreams. Supporting you and watching you shine brings me incredible happiness."
+      title: "Seus Sonhos",
+      description: "Amo como você é apaixonada por seus objetivos e sonhos. Te apoiar e ver você brilhar me traz uma felicidade incrível."
     },
     {
-      title: "Your Gentle Touch",
-      description: "The way you hold my hand, give the best hugs, and make me feel safe and loved with just your touch is magical."
+      title: "Seu Toque Carinhoso",
+      description: "A forma como você segura minha mão, dá os melhores abraços e me faz sentir seguro e amado apenas com seu toque é mágica."
     },
     {
-      title: "Your Strength",
-      description: "You face challenges with such grace and determination. Your strength inspires me and makes me proud to be by your side."
+      title: "Sua Força",
+      description: "Você enfrenta desafios com tanta graça e determinação. Sua força me inspira e me deixa orgulhoso de estar ao seu lado."
     },
     {
-      title: "Your Love for Life",
-      description: "You find joy in the smallest moments and teach me to appreciate every blessing we have together."
+      title: "Seu Amor pela Vida",
+      description: "Você encontra alegria nos menores momentos e me ensina a valorizar cada bênção que temos juntos."
     },
     {
-      title: "The Way You Love Me",
-      description: "You love me completely, flaws and all. You make me feel worthy, cherished, and like the luckiest person alive."
+      title: "Como Você Me Ama",
+      description: "Você me ama completamente, com defeitos e tudo. Você me faz sentir merecedor, querido e como a pessoa mais sortuda do mundo."
     }
   ];
 
@@ -52,10 +52,10 @@ const LoveReasons = () => {
         {/* Header */}
         <div className="text-center mb-16 px-4">
           <h1 className="font-vibes text-5xl md:text-7xl text-romantic-deepRose mb-6">
-            Why I Love You
+            Por Que Te Amo
           </h1>
           <p className="font-dancing text-xl md:text-2xl text-romantic-rose max-w-3xl mx-auto mb-8">
-            There are countless reasons why you're the love of my life. Here are just a few that make my heart overflow with love for you every single day.
+            Existem milhares de razões pelas quais você é o amor da minha vida. Aqui estão algumas que fazem meu coração transbordar de amor por você todos os dias.
           </p>
           <Heart className="h-12 w-12 text-romantic-rose mx-auto animate-pulse-heart" />
         </div>
@@ -87,12 +87,12 @@ const LoveReasons = () => {
         <div className="container mx-auto px-4 mt-16">
           <div className="romantic-card text-center max-w-4xl mx-auto">
             <h2 className="font-vibes text-4xl text-romantic-deepRose mb-6">
-              And So Much More...
+              E Muito Mais...
             </h2>
             <p className="font-dancing text-xl text-romantic-rose leading-relaxed">
-              Every day with you, I discover new reasons to love you. You are my heart, my soul, 
-              my everything. Thank you for being the amazing woman you are and for choosing to 
-              share your beautiful life with me. I love you more than words could ever express. ❤️
+              Todos os dias contigo, eu descubro novas razões para te amar. Você é meu coração, minha alma, 
+              meu tudo. Obrigado por ser a mulher incrível que você é e por escolher compartilhar sua vida linda comigo. 
+              Eu te amo mais do que palavras poderiam expressar. ❤️
             </p>
           </div>
         </div>
