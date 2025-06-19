@@ -1,10 +1,8 @@
-
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import SecretHeartButton from '@/components/SecretHeartButton';
-import MusicPlayer from '@/components/MusicPlayer';
 
 const Index = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -117,7 +115,6 @@ const Index = () => {
 
       <Footer />
       <SecretHeartButton />
-      <MusicPlayer />
     </div>
   );
 };
