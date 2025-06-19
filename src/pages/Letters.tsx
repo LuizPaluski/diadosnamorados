@@ -50,7 +50,7 @@ const LettersPage = () => {
           
           <LetterCard title="Abra para lembrar do nosso primeiro beijo...">
             <p>
-              Lembra daquele dia? A ansiedade, o frio na barriga... e então, tudo parou.
+              Lembra daquele dia na festa? A ansiedade, o frio na barriga hihi... e então, tudo parou.
               Foi o beijo mais perfeito do mundo, porque foi o nosso. Foi o começo de tudo.
               Até hoje, cada beijo seu tem o mesmo poder de me fazer flutuar.
               Obrigado por aquele momento e por todos os que vieram depois.
@@ -59,7 +59,7 @@ const LettersPage = () => {
 
           <LetterCard title="Abra quando quiser uma dose de risada...">
             <p>
-              Oi, amor! Pensa naquela nossa piada interna que só a gente entende. Lembrou?
+              Oi, amor! Pensa no dia que eu falei batata ao invez de cenoura(eu acho). Lembrou?
               Agora lembra daquela vez que a gente riu tanto que a barriga doeu.
               Seu sorriso é a minha coisa favorita no mundo, então espero que essa lembrança tenha feito você sorrir agora.
               Te amo, sua boba! :)
