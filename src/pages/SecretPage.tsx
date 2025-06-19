@@ -9,7 +9,7 @@ const SecretPage = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [error, setError] = useState('');
   
-  // Defina a sua senha secreta aqui (usei "girassol" como exemplo)
+
   const CORRECT_PASSWORD = 'girassol';
 
   const handlePasswordSubmit = (e: React.FormEvent) => {
