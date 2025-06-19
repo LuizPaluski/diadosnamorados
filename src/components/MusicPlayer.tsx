@@ -8,7 +8,7 @@ const MusicPlayer = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
 
   // URL de uma música romântica de domínio público
-  const musicUrl = "https://www.soundjay.com/misc/sounds/magic-chime-02.wav";
+  const musicUrl = "https://open.spotify.com/track/7tmvvRmUqzCRjRx9ub8K7i?si=e671b5e6abe948fe";
 
   useEffect(() => {
     if (audioRef.current) {
