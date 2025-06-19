@@ -1,77 +1,86 @@
+// src/components/Navigation.tsx
 
 import { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Menu, X, Heart } from 'lucide-react';
+
+const navLinks = [
+  { to: '/our-story', text: 'Nossa História' },
+  { to: '/gallery', text: 'Galeria' },
+  { to: '/love-reasons', text: '100 Motivos' },
+  { to: '/letters', text: 'Abra Quando...' }, // <<< LINK ADICIONADO AQUI
+  { to: '/future-dreams', text: 'Nossos Sonhos' },
+];
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation();
-
-  const menuItems = [
-    { path: '/', label: 'Início' },
-    { path: '/gallery', label: 'Nossas Memórias' },
-    { path: '/love-reasons', label: 'Por Que Te Amo' },
-    { path: '/our-story', label: 'Nossa História' },
-    { path: '/future-dreams', label: 'Nossos Sonhos' },
-  ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-romantic-rose/20">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2">
-            <Heart className="h-6 w-6 text-romantic-rose animate-pulse-heart" />
-            <span className="font-vibes text-2xl text-romantic-deepRose">Meu Monene</span>
+    <header className="fixed top-0 left-0 right-0 z-40 bg-white/80 backdrop-blur-sm shadow-md">
+      <nav className="container mx-auto px-6 py-3">
+        <div className="flex justify-between items-center">
+          <Link to="/" className="flex items-center gap-2">
+            <Heart className="h-8 w-8 text-romantic-rose" />
+            <span className="font-parisienne text-2xl text-romantic-deepRose">Nosso Cantinho</span>
           </Link>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
-            {menuItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className={`font-poppins text-sm transition-colors duration-300 hover:text-romantic-rose ${
-                  location.pathname === item.path 
-                    ? 'text-romantic-deepRose font-medium' 
-                    : 'text-gray-700'
-                }`}
+            {navLinks.map((link) => (
+              <NavLink
+                key={link.to}
+                to={link.to}
+                className={({ isActive }) =>
+                  `font-lato font-medium pb-1 border-b-2 transition-colors duration-300 ${
+                    isActive
+                      ? 'text-romantic-deepRose border-romantic-deepRose'
+                      : 'text-gray-600 border-transparent hover:text-romantic-rose'
+                  }`
+                }
               >
-                {item.label}
-              </Link>
+                {link.text}
+              </NavLink>
             ))}
           </div>
 
           {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 text-romantic-rose"
-          >
-            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          <div className="md:hidden">
+            <button onClick={() => setIsOpen(!isOpen)}>
+              <Menu className="h-6 w-6 text-romantic-deepRose" />
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      {/* Mobile Menu */}
+      <div
+        className={`fixed top-0 left-0 h-full w-full bg-white transition-transform duration-300 ease-in-out md:hidden ${
+          isOpen ? 'translate-x-0' : '-translate-x-full'
+        }`}
+      >
+        <div className="flex justify-end p-6">
+          <button onClick={() => setIsOpen(false)}>
+            <X className="h-6 w-6 text-romantic-deepRose" />
           </button>
         </div>
-
-        {/* Mobile Menu */}
-        {isOpen && (
-          <div className="md:hidden py-4 border-t border-romantic-rose/20">
-            {menuItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                onClick={() => setIsOpen(false)}
-                className={`block py-2 font-poppins text-sm transition-colors duration-300 hover:text-romantic-rose ${
-                  location.pathname === item.path 
-                    ? 'text-romantic-deepRose font-medium' 
-                    : 'text-gray-700'
-                }`}
-              >
-                {item.label}
-              </Link>
-            ))}
-          </div>
-        )}
+        <div className="flex flex-col items-center justify-center h-full -mt-16 space-y-8">
+          {navLinks.map((link) => (
+            <NavLink
+              key={link.to}
+              to={link.to}
+              onClick={() => setIsOpen(false)}
+              className={({ isActive }) =>
+                `font-garamond text-3xl ${
+                  isActive ? 'text-romantic-deepRose' : 'text-gray-600'
+                }`
+              }
+            >
+              {link.text}
+            </NavLink>
+          ))}
+        </div>
       </div>
-    </nav>
+    </header>
   );
 };
 
