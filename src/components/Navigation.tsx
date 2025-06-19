@@ -7,8 +7,8 @@ import { Menu, X, Heart } from 'lucide-react';
 const navLinks = [
   { to: '/our-story', text: 'Nossa História' },
   { to: '/gallery', text: 'Galeria' },
-  { to: '/love-reasons', text: '100 Motivos' },
-  { to: '/letters', text: 'Abra Quando...' }, // <<< LINK ADICIONADO AQUI
+  { to: '/love-reasons', text: 'Por Que Te Amo' },
+  { to: '/letters', text: 'Abra Quando...' }, 
   { to: '/future-dreams', text: 'Nossos Sonhos' },
 ];
 
