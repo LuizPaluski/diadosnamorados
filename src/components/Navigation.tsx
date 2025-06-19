@@ -11,12 +11,12 @@ const Navigation = () => {
     { to: '/our-story', text: 'Nossa História' },
     { to: '/gallery', text: 'Galeria' },
     { to: '/letters', text: 'Abra Quando...' },
-    { to: '/quiz', text: 'Nosso Quiz' }, // <<< LINK ADICIONADO AQUI
+    { to: '/quiz', text: 'Nosso Quiz' },
+    { to: '/journey', text: 'Nossa Jornada 3D' }, // <<< LINK ADICIONADO AQUI
     { to: '/future-dreams', text: 'Nossos Sonhos' },
   ];
-  
-  // Reorganizando a ordem do menu para melhor fluxo
-  const menuOrder = ['/', '/our-story', '/gallery', '/letters', '/quiz', '/future-dreams'];
+
+  const menuOrder = ['/', '/our-story', '/gallery', '/letters', '/quiz', '/journey', '/future-dreams'];
   const sortedNavLinks = navLinks.sort((a, b) => menuOrder.indexOf(a.to) - menuOrder.indexOf(b.to));
 
   const NavItem = ({ to, text }: { to: string, text: string }) => (
@@ -44,12 +44,10 @@ const Navigation = () => {
             <span className="font-parisienne text-2xl text-romantic-deepRose">Nosso Cantinho</span>
           </Link>
 
-          {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-8">
             {sortedNavLinks.map((link) => <NavItem key={link.to} {...link} />)}
           </div>
 
-          {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button onClick={() => setIsOpen(!isOpen)}>
               {isOpen ? <X className="h-6 w-6 text-romantic-deepRose" /> : <Menu className="h-6 w-6 text-romantic-deepRose" />}

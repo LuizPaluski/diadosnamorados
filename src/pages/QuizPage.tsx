@@ -20,13 +20,13 @@ const quizQuestions = [
   },
   {
     question: "Qual o nome da primeira série que maratonamos juntos?",
-    answers: ["Friends", "The Office", "Game of Thrones", "Stranger Things"],
-    correctAnswer: "The Office"
+    answers: ["Friends", "The Office", "Game of Thrones", "Euphoria"],
+    correctAnswer: "Euphoria"
   },
   {
     question: "Qual é a sua 'linguagem do amor' favorita que eu demonstro?",
     answers: ["Presentes", "Tempo de qualidade", "Palavras de afirmação", "Toque físico"],
-    correctAnswer: "Tempo de qualidade"
+    correctAnswer: "Toque físico"
   },
   {
     question: "Se a nossa história fosse um filme, qual seria o gênero?",
