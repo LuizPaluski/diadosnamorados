@@ -1,114 +1,90 @@
-// src/pages/DiaryPage.tsx
+import { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import { Menu, X, Heart } from 'lucide-react';
 
-import { useState, useEffect } from 'react';
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
-import { supabase } from '@/lib/supabaseClient'; 
-import { BookMarked, PlusCircle } from 'lucide-react';
+const Navigation = () => {
+  const [isOpen, setIsOpen] = useState(false);
 
-interface Note {
-  id: number;
-  created_at: string;
-  content: string;
-}
+  const navLinks = [
+    { to: '/', text: 'Início' },
+    { to: '/our-story', text: 'Nossa História' },
+    { to: '/gallery', text: 'Galeria' },
+    { to: '/letters', text: 'Abra Quando...' },
+    { to: '/quiz', text: 'Nosso Quiz' },
+    // O link para "Nosso Diário" foi removido
+    { to: '/future-dreams', text: 'Nossos Sonhos' },
+  ];
 
-const DiaryPage = () => {
-  const [notes, setNotes] = useState<Note[]>([]);
-  const [newNote, setNewNote] = useState('');
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
+  const menuOrder = ['/', '/our-story', '/gallery', '/letters', '/quiz', '/future-dreams'];
+  const sortedNavLinks = navLinks.sort((a, b) => menuOrder.indexOf(a.to) - menuOrder.indexOf(b.to));
 
-  const fetchNotes = async () => {
-    setLoading(true);
-    const { data, error } = await supabase
-      .from('notes')
-      .select('*')
-      .order('created_at', { ascending: false }); 
-
-    if (error) {
-      console.error('Erro ao buscar notas:', error);
-      setError('Não foi possível carregar as memórias. Tente recarregar a página.');
-    } else {
-      setNotes(data);
-    }
-    setLoading(false);
-  };
-
-  useEffect(() => {
-    fetchNotes();
-  }, []);
-
-  const handleAddNote = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (newNote.trim() === '') return;
-
-    const { data, error } = await supabase
-      .from('notes')
-      .insert([{ content: newNote }])
-      .select();
-
-    if (error) {
-      console.error('Erro ao salvar nota:', error);
-      setError('Ocorreu um erro ao salvar sua memória.');
-    } else if (data) {
-      setNotes([data[0], ...notes]);
-      setNewNote(''); 
-    }
-  };
+  const NavItem = ({ to, text }: { to: string, text: string }) => (
+    <NavLink
+      to={to}
+      onClick={() => setIsOpen(false)}
+      className={({ isActive }) =>
+        `font-lato pb-1 border-b-2 transition-colors duration-300 whitespace-nowrap ${
+          isActive
+            ? 'text-romantic-deepRose border-romantic-deepRose'
+            : 'text-gray-600 border-transparent hover:text-romantic-rose'
+        }`
+      }
+    >
+      {text}
+    </NavLink>
+  );
 
   return (
-    <div className="min-h-screen">
-      <Navigation />
-      <main className="container mx-auto px-4 py-24 animate-fade-in">
-        <div className="text-center mb-12">
-          <BookMarked className="h-16 w-16 mx-auto text-romantic-rose mb-4" />
-          <h1 className="font-parisienne text-5xl md:text-7xl text-romantic-deepRose">
-            Nosso Diário Secreto
-          </h1>
-          <p className="font-garamond text-xl text-romantic-rose mt-2">
-            Um lugar para guardar nossos pensamentos, sonhos e memórias.
-          </p>
-        </div>
+    <header className="fixed top-0 left-0 right-0 z-40 bg-white/80 backdrop-blur-sm shadow-md">
+      <nav className="container mx-auto px-4 sm:px-6 py-3">
+        <div className="flex justify-between items-center">
+          <Link to="/" className="flex items-center gap-2">
+            <Heart className="h-8 w-8 text-romantic-rose" />
+            <span className="font-parisienne text-2xl text-romantic-deepRose">Nosso Cantinho</span>
+          </Link>
 
-        <div className="max-w-2xl mx-auto">
-          <form onSubmit={handleAddNote} className="mb-8">
-            <div className="romantic-card p-4">
-              <textarea
-                value={newNote}
-                onChange={(e) => setNewNote(e.target.value)}
-                className="w-full p-2 border-2 border-romantic-blush rounded-lg focus:ring-2 focus:ring-romantic-rose focus:outline-none"
-                rows={4}
-                placeholder="Escreva uma nova memória ou um pensamento do dia..."
-              />
-              <button type="submit" className="love-button mt-4 w-full flex items-center justify-center gap-2">
-                <PlusCircle size={20} />
-                Guardar Memória
-              </button>
-            </div>
-          </form>
+          <div className="hidden lg:flex items-center space-x-6">
+            {sortedNavLinks.map((link) => <NavItem key={link.to} {...link} />)}
+          </div>
 
-          <div className="space-y-6">
-            {loading && <p className="text-center">Carregando memórias...</p>}
-            {error && <p className="text-center text-red-500">{error}</p>}
-            
-            {!loading && notes.length === 0 && (
-              <p className="text-center text-gray-500 font-garamond text-lg">Nenhuma memória guardada ainda. Seja a primeira!</p>
-            )}
-            
-            {notes.map((note) => (
-              <div key={note.id} className="romantic-card p-6">
-                <p className="font-lato text-gray-800">{note.content}</p>
-                <p className="text-right text-xs text-gray-400 mt-4">
-                  {new Date(note.created_at).toLocaleDateString('pt-BR', { day: '2-digit', month: 'long', year: 'numeric' })}
-                </p>
-              </div>
-            ))}
+          <div className="lg:hidden">
+            <button onClick={() => setIsOpen(!isOpen)}>
+              {isOpen ? <X className="h-6 w-6 text-romantic-deepRose" /> : <Menu className="h-6 w-6 text-romantic-deepRose" />}
+            </button>
           </div>
         </div>
-      </main>
-      <Footer />
-    </div>
+      </nav>
+
+      {/* Mobile Menu */}
+      <div
+        className={`fixed top-0 left-0 h-full w-full bg-white transition-transform duration-300 ease-in-out lg:hidden ${
+          isOpen ? 'translate-x-0' : '-translate-x-full'
+        }`}
+      >
+        <div className="flex justify-end p-6">
+          <button onClick={() => setIsOpen(false)}>
+            <X className="h-6 w-6 text-romantic-deepRose" />
+          </button>
+        </div>
+        <div className="flex flex-col items-center justify-center h-full -mt-16 space-y-8">
+          {sortedNavLinks.map((link) => (
+             <NavLink
+              key={link.to}
+              to={link.to}
+              onClick={() => setIsOpen(false)}
+              className={({ isActive }) =>
+                `font-garamond text-3xl ${
+                  isActive ? 'text-romantic-deepRose' : 'text-gray-600'
+                }`
+              }
+            >
+              {link.text}
+            </NavLink>
+          ))}
+        </div>
+      </div>
+    </header>
   );
 };
 
-export default DiaryPage;
+export default Navigation;
