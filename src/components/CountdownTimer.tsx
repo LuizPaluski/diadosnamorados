@@ -7,7 +7,7 @@ import { CalendarHeart } from 'lucide-react';
 // Altere esta data para a data especial de vocês!
 // Formato: Ano, Mês (0-11), Dia, Hora, Minuto, Segundo
 // Exemplo para 21 de Outubro de 2025: new Date(2025, 9, 21, 0, 0, 0)
-const TARGET_DATE = new Date(2025, 7, 19, 0, 0, 0);
+const TARGET_DATE = new Date(2025, 6, 19, 0, 0, 0);
 
 const calculateTimeLeft = () => {
   const difference = +TARGET_DATE - +new Date();
