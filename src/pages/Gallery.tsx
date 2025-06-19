@@ -7,32 +7,44 @@ import SecretHeartButton from '@/components/SecretHeartButton';
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
 
-  // Sample photos - replace with your actual photos
+  // Fotos reais do casal
   const photos = [
     {
-      src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop",
-      caption: "Nosso primeiro encontro - o começo do para sempre"
+      src: "/lovable-uploads/87d0e609-068a-432d-a457-ebb98a7806b2.png",
+      caption: "Momentos bobos e divertidos que fazem meu coração acelerar"
     },
     {
-      src: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?w=600&h=400&fit=crop",
-      caption: "Dançando sob as estrelas"
+      src: "/lovable-uploads/39cef09c-11af-40c4-bd65-968b13bbfa9a.png",
+      caption: "Festa junina especial - celebrando nosso amor com alegria"
     },
     {
-      src: "https://images.unsplash.com/photo-1472396961693-142e6e269027?w=600&h=400&fit=crop",
-      caption: "Aventura juntos nas montanhas"
+      src: "/lovable-uploads/c3cdc0c1-f49b-4845-bea1-8f5e4609801b.png",
+      caption: "Sorrisos que iluminam qualquer dia - assim é nosso amor"
     },
     {
-      src: "https://images.unsplash.com/photo-1470813740244-df37b8c1edcb?w=600&h=400&fit=crop",
-      caption: "Assistindo o pôr do sol de mãos dadas"
+      src: "/lovable-uploads/ce1c29a4-4628-47f6-83c0-d0b5cafd4210.png",
+      caption: "Olhares apaixonados que dizem tudo sem precisar de palavras"
     },
     {
-      src: "https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=600&h=400&fit=crop",
-      caption: "Momentos aconchegantes em casa"
+      src: "/lovable-uploads/7320e5bc-cacb-4ca6-80d8-9308bc1647b6.png",
+      caption: "Cuidando um do outro - até nas máscaras faciais somos fofos"
     },
     {
-      src: "https://imagekit.io/public/share/phimtncbt/cd14919363c058b34da2d6a35f8dfaeb797bd12c77df1324eb22231aacabfd6a1760a31b35d80a9b1df0e278b543c52d93091eed4a6d48cee7419e460c3e62acedbcf1168059451e794449db9daffdb9",
-      caption: "Até nossos pets amam nossa história de amor"
+      src: "/lovable-uploads/16e637fd-c23e-49c0-ac2a-ef4ea6899519.png",
+      caption: "Aventuras juntos - cada viagem é melhor ao seu lado"
     },
+    {
+      src: "/lovable-uploads/cc46d6e8-e8b0-4606-b64c-7bd14230de7d.png",
+      caption: "Noites mágicas explorando o mundo juntos"
+    },
+    {
+      src: "/lovable-uploads/a9c67f05-fd3d-4774-b45a-fb159039b37f.png",
+      caption: "Seu sorriso é a coisa mais linda que existe no mundo"
+    },
+    {
+      src: "/lovable-uploads/6da6edd4-5292-4575-8e40-05612ff5d8cb.png",
+      caption: "Momentos íntimos que guardarei para sempre no coração"
+    }
   ];
 
   return (

@@ -41,10 +41,10 @@ const Index = () => {
 
         {/* Main Content */}
         <div className={`relative z-10 text-center px-4 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          {/* Profile Image Placeholder */}
+          {/* Profile Image */}
           <div className="w-64 h-64 mx-auto mb-8 rounded-full overflow-hidden shadow-2xl border-4 border-white/50">
             <img
-              src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=400&fit=crop&crop=face"
+              src="/lovable-uploads/a9c67f05-fd3d-4774-b45a-fb159039b37f.png"
               alt="Minha Linda Namorada"
               className="w-full h-full object-cover hover:scale-110 transition-transform duration-700"
             />
